@@ -74,7 +74,6 @@ security.provider.6=sun.security.jgss.SunProvider
 security.provider.7=com.sun.security.sasl.Provider
 security.provider.8=org.jcp.xml.dsig.internal.dom.XMLDSigRI
 security.provider.9=sun.security.smartcardio.SunPCSC
-security.provider.10=apple.security.AppleProvider
 
 #
 # Sun Provider SecureRandom seed source.
@@ -222,7 +221,6 @@ package.access=sun.,\
                jdk.nashorn.internal.,\
                jdk.nashorn.tools.,\
                com.sun.activation.registries.,\
-               apple.,\
                com.sun.browser.,\
                com.sun.glass.,\
                com.sun.javafx.,\
@@ -281,7 +279,6 @@ package.definition=sun.,\
                    jdk.nashorn.internal.,\
                    jdk.nashorn.tools.,\
                    com.sun.activation.registries.,\
-                   apple.,\
                    com.sun.browser.,\
                    com.sun.glass.,\
                    com.sun.javafx.,\
@@ -509,7 +506,7 @@ krb5.kdc.bad.policy = tryLast
 #     in a certificate chain that terminates at a marked trust anchor in the
 #     lib/security/cacerts keystore.  All other chains are not affected.
 #     If the jdkCA constraint is not set, then all chains using the
-#     specified algorithm are restricted. jdkCA may only be used once in
+#     specified algorithm are restricted.  jdkCA may only be used once in
 #     a DisabledAlgorithm expression.
 #     Example:  To apply this constraint to SHA-1 certificates, include
 #     the following:  "SHA1 jdkCA"
